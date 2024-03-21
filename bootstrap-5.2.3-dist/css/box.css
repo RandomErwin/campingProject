@@ -1,0 +1,130 @@
+.slider_wall {
+    margin: 50px auto;
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 0 100px 0 #FFF;
+}
+
+.slider_wall li {
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+    z-index: 2;
+    font-size: 100px;
+    line-height: 200px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+}
+
+.slider_wall .picGroup {
+    position: absolute;
+    z-index: 0;
+    width: 1000px;
+    height: 600px;
+}
+
+.slider_wall .picGroup div {
+    float: left;
+    width: 200px;
+    height: 200px;
+    transition: background-position 1s;
+}
+
+.slider_wall .picGroup div:nth-child(3n) {
+    background-position: 0 200px;
+    background-color: #F00;
+}
+
+.slider_wall .picGroup div:nth-child(3n+1) {
+    background-position: 400px 0;
+    background-color: #999;
+}
+
+.slider_wall .picGroup div:nth-child(3n+2) {
+    background-position: 400px 0;
+    background-color: #990;
+}
+
+.slider_wall .picGroup div:nth-child(2n+5) {
+    background-position: 0 200px;
+    background-color: #090;
+}
+
+.pic1 {
+    background-image: url("./images/splitpic/splitpic00.jpg");
+}
+
+.pic2 {
+    background-image: url("./images/splitpic/splitpic01.jpg");
+}
+
+.pic3 {
+    background-image: url("./images/splitpic/splitpic02.jpg");
+}
+
+.pic4 {
+    background-image: url("./images/splitpic/splitpic03.jpg");
+}
+
+.pic5 {
+    background-image: url("./images/splitpic/splitpic04.jpg");
+}
+
+.pic6 {
+    background-image: url("./images/splitpic/splitpic10.jpg");
+}
+
+.pic7 {
+    background-image: url("./images/splitpic/splitpic11.jpg");
+}
+
+.pic8 {
+    background-image: url("./images/splitpic/splitpic12.jpg");
+}
+
+.pic9 {
+    background-image: url("./images/splitpic/splitpic13.jpg");
+}
+
+.pic10 {
+    background-image: url("./images/splitpic/splitpic14.jpg");
+}
+
+.pic11 {
+    background-image: url("./images/splitpic/splitpic20.jpg");
+}
+
+.pic12 {
+    background-image: url("./images/splitpic/splitpic21.jpg");
+}
+
+.pic13 {
+    background-image: url("./images/splitpic/splitpic22.jpg");
+}
+
+.pic14 {
+    background-image: url("./images/splitpic/splitpic23.jpg");
+}
+
+.pic15 {
+    background-image: url("./images/splitpic/splitpic24.jpg");
+}
+
+.slider_wall li:nth-child(3n):focus ~ .picGroup div:nth-child(3n+1){background-position:200px 0;}
+.slider_wall li:nth-child(3n):focus ~ .picGroup div:nth-child(3n+2){background-position:0 0;}
+.slider_wall li:nth-child(3n):focus ~ .picGroup div:nth-child(2n+5){background-position:0 0;}
+
+.slider_wall li:nth-child(3n+1):focus ~ .picGroup div:nth-child(3n){ background-position:0 400px;}
+.slider_wall li:nth-child(3n+1):focus ~ .picGroup div:nth-child(3n+2){background-position:600px 0;}
+.slider_wall li:nth-child(3n+1):focus ~ .picGroup div:nth-child(2n+5){background-position:0 600px;}
+
+.slider_wall li:nth-child(3n+2):focus ~ .picGroup div:nth-child(3n){ background-position:0 600px;}
+.slider_wall li:nth-child(3n+2):focus ~ .picGroup div:nth-child(3n+1){background-position:600px 0;}
+.slider_wall li:nth-child(3n+2):focus ~ .picGroup div:nth-child(2n+5){background-position:0 400px;}
+
+.slider_wall li:nth-child(2n+5):focus ~ .picGroup div:nth-child(3n){ background-position:0 0;}
+.slider_wall li:nth-child(2n+5):focus ~ .picGroup div:nth-child(3n+1){background-position:0 0;}
+.slider_wall li:nth-child(2n+5):focus ~ .picGroup div:nth-child(3n+2){background-position:200px 0;}
+.slider_wall li:nth-child(2n+5):focus ~ .picGroup div:nth-child(2n+5){background-position:0 200px;}

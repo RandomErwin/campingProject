@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: lightblue; */
+    background-image: url(../images/fst02.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #116374;
+    padding: 40px 60px;
+    gap: 30px;
+    opacity: 0.95;
+}
+h2{
+    font-size: 2em;
+}
+.reset{
+    padding: 10px 50px;
+    color: #267465;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 430px;
+    height: 430px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.item{
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 3em;
+    transition: 0.25s;
+    transform: rotateY(180deg);
+}
+/* .item.boxOpen */
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+.item::after{
+    position: absolute; 
+    content: '';
+    inset: 0;
+    /* opacity: 0.5; */
+    background: #209d7b;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+/* boxOpen 及 boxMatch 都有rotateY(180deg) */
+.boxOpen:after, .boxMatch:after{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,21 @@
+.border{
+    height: 200vh;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box-amber{
+    background-color: lightsalmon;
+}
+.box-red{
+    background-color: lightcoral;
+}
+.box-green{
+    background-color: lightgreen;
+}
+.position{
+    position: fixed;
+    top: 100px;
+    left: 10%;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneRain</title>
+    <link rel="stylesheet" href="./css/custstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bodySet">
+    <header>
+        <button id="bugerBtn" class="menu">
+            <div>&#9776;</div>
+            <div id="link" class="bugernav">
+                <a href="photography.html">POTOGRAPHY</a>
+                <a href="about.html">ABOUT</a>
+                <a href="info.html">INFORMATION</a>
+                <a href="login.html">LOGIN</a>
+            </div>
+        </button>
+        <h1>
+            <a href="camp.html"><img src="images/logo02.png"></a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="photography.html">POTOGRAPHY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="info.html">INFORMATION</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="box">
+        <div class="space"></div>
+        <div class="infoTop">
+            <h1>INFORMATION</h1>
+            <ol>
+                <li><a href="camp.html">TOP</a></li>
+                <li>INFORMATION</li>
+            </ol>
+        </div>
+        <div class="itscroll appear inform">
+            <img class="img-set" src="./images/sp07.jpg" alt="">
+            <div class="info2">
+                <h1>CLASICAL</h1>
+                <p>最經典的露營形式，使用帳篷在露營場地或野外搭建臨時住所，享受大自然的美景和清新空氣，是最接近自然的體驗。
+                </p>
+                <a href="#">TOUR/EVENT</a>
+            </div>
+        </div>
+        <div class="itscroll appear inform">
+            <img class="img-set" src="./images/sp03.jpeg" alt="">
+            <div class="info2">
+                <h1>Cruise</h1>
+                <p>透過房車或露營車等移動式居住工具，探索各種地理環境，可以在山林、沙灘或湖畔等地停留，提供舒適的住宿條件，同時保持便利性和自由度。
+                </p>
+                <a href="#">TOUR/EVENT</a>
+            </div>
+        </div>
+        <div class="itscroll appear inform">
+            <img class="img-set" src="./images/sp06.jpg" alt="">
+            <div class="info2">
+                <h1>SPECIFIC</h1>
+                <p>這種形式包括冰川露營、沙漠露營、海灘露營等，根據地理位置或特定活動來進行露營，體驗不同的自然景觀和文化體驗。
+                </p>
+                <a href="#">TOUR/EVENT</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <img class="imgTrans" src="./images/ads01.jpeg" alt="">
+    </section>
+    <section>
+        <div class="itscroll appear inform">
+            <img class="img-set" src="./images/sp08.jpg" alt="">
+            <div class="info2">
+                <h1>Adventure Cruise</h1>
+                <p>相對於在露營場地的露營，野營更加原始和挑戰性，通常在偏遠的野外地區進行，需要攜帶糧食、水源等生存必需品，體驗野外求生技能和大自然的野性之美。
+                </p>
+                <a href="#">TOUR/EVENT</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mapSet">
+            <h2>PLACE</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9088.360541559858!2d121.75240802523987!3d25.080849805515665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d51b021f70689%3A0x92f2c75983bb8d76!2zMjA15Z-66ZqG5biC5pqW5pqW5Y2A5p2x5Yui6KGXMjIx6Jmf!5e0!3m2!1szh-TW!2stw!4v1710989076103!5m2!1szh-TW!2stw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="bordSet">
+            <div class="pSet">
+                <p>所在地</p>
+                <p>205基隆市暖暖區東勢街221號</p>
+            </div>
+        </div>
+        <div class="bordSet">
+            <div class="pSet">
+                <p>營業時間</p>
+                <p>10:00〜18:00</p>
+            </div>
+        </div>
+        <div class="bordSet">
+            <div class="pSet">
+                <p>定休日</p>
+                <p>星期一</p>
+            </div>
+        </div>
+        <div class="bordSet">
+            <div class="pSet">
+                <p>路線</p>
+                <p>中山高速公路 → 下暖暖交流道 → 循台二丙線 (車程約10分鐘可抵達)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <img src="images/logo02.png" alt="">
+            <p>To Travel is To Life</p>
+        </div>
+        <p>CopyRight&nbsp; &copy;2023 GeneRain All Rights Reserved.</p>
+    </footer>
+
+</body>
+<script src="./js/custor.js"></script>
+<script>
+    const items = document.querySelectorAll('.appear');
+
+    const active = function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('inview');
+            } else {
+                entry.target.classList.remove('inview');
+            }
+        });
+    }
+    const io2 = new IntersectionObserver(active);
+    for (let i = 0; i < items.length; i++) {
+        io2.observe(items[i]);
+    }
+</script>
+
+</html>

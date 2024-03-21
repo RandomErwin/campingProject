@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneRain</title>
+    <link rel="stylesheet" href="./css/custstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="round" class="bg1">
+        <button id="btn1"><img src="images/btn01.webp" alt=""></button>
+        <button id="btn2"><img src="images/btn01.webp" alt=""></button>
+        <button id="btn3"><img src="images/btn01.webp" alt=""></button>
+
+        <audio autoplay loop>
+            <source src="music/Galactic Rap.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="container">
+            <!--form action="xxx.html" ==> inpit:submit 前往網頁  -->
+            <form action="memorycard.html" class="form-set">
+                <label for="username">帳號</label>
+                <input type="text" id="username" name="username">
+                <label for="username">密碼</label>
+                <input type="text" id="passward" name="passward">
+                <input type="submit" value="登入" >
+            </form>       
+        </div>
+
+        <div class="avatar">
+            <a href="camp.html">
+                <img src="./images/h01.webp" alt="Skytsunami" />
+            </a>
+        </div>
+    </section>
+
+    <script>
+        function showTrans1() {
+            round.className = 'bg2';
+        }
+        function showTrans2() {
+            round.className = 'bg3';
+        }
+        function showTrans3() {
+            round.className = 'bg1';
+        }
+        btn1.addEventListener('click', showTrans1);
+        btn2.addEventListener('click', showTrans2);
+        btn3.addEventListener('click', showTrans3);
+
+    </script>
+</body>
+
+</html>
