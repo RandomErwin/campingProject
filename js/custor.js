@@ -21,3 +21,14 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e1) => observer.observe(e1));
+
+const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    allowTouchMove: false,
+    autoplay:{
+        delay: 0,
+        disableOnInteraction: false
+    },
+    loop: true,
+    speed: 10000
+});

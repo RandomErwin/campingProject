@@ -182,6 +182,9 @@ input[type=submit]{
 /* -------section-------- */
 /* ---------------------- */
 /* ---------------------- */
+.topic{
+    border-bottom: 1px solid #000;
+}
 .topic img {
     width: 100vw;
 }
@@ -280,6 +283,7 @@ input[type=submit]{
 
 .info2 h1{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .info2 a{
@@ -299,6 +303,12 @@ input[type=submit]{
 }
 
 .imgTrans{
+    background-image: url("../images/bgStick.png");
+    min-height: 600px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -409,7 +419,7 @@ input[type=submit]{
     justify-content: center;
     align-items: center;
     margin: 80px 120px;
-    padding: 50px;
+    padding: 40px 100px;
     border: 1px solid #000;
 }
 .joinSet p{
@@ -639,22 +649,11 @@ footer p{
     right: 5vw;
 }
 
-/* @keyframes fliper{
-    0%{
-        transform: translateY(0px);
-        visibility: visible;
-    }
-    100%{
-        transform: translateY(500px);
-        visibility: hidden;
-    }
-}
-
-.slide{
-    transform: translateY(0px);
-    animation: fliper 15s ease-in-out infinite;
-} */
-
+/* ---------------------- */
+/* ---------------------- */
+/* ---effect: slidshow--- */
+/* ---------------------- */
+/* ---------------------- */
 .slideshow{
     /* position: relative; */
     overflow: hidden;
@@ -667,21 +666,25 @@ footer p{
     animation: slideshow 10s linear infinite;
     transform: translate3d(0, 0, 0);
 }
-/* .images :hover{
-    left: 0;
-    top: 0;
-    height: 80vh;
-    width: 25%;
-    animation: slideshow 10s linear infinite;
+.slideshow :hover{
     animation-play-state: paused;
     transform: translate3d(0, 0, 0);
-} */
+}
 @keyframes slideshow{
     100%{
         -webkit-transform: translateY(-100%);
     }
 }
-
+.swiper-slide{
+    display: inline;
+    width: 40%;
+    font-size:24px;
+    font-family: "Noto Serif TC", serif;
+    color: #000;
+}
+.swiper-wrapper {
+    transition-timing-function: linear;
+}
 /* 響應式網頁設計 */
 @media screen and (max-width: 1000px) {
     header ul {
